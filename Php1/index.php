@@ -13,6 +13,32 @@ and open the template in the editor.
         <?php
         // put your code here
             echo "Hello Php";
+            echo "<h1>Titolo h1</h1>";
+            
+            $cond = 0;
+            if($cond==0)
+            {
+                echo "<p>Cond uguale a 0</p>";
+            }
+            else
+            {
+                echo "<p>Cond diverso da 0</p>";
+            }
+            
         ?>
+        <form>
+            <select>
+            <?php
+                for($i=0; $i<10; $i++)
+                {
+                    ?>
+                <option value="<?php echo $i;?>">
+                    Valore <?php echo $i;?>
+                </option>
+            <?php
+                }
+            ?>
+            </select>
+        </form>
     </body>
 </html>
