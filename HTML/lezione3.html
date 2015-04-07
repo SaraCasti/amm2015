@@ -28,6 +28,7 @@ and open the template in the editor.
             <br/>
             <!-- Input type='email' per l'inserimento dell'indirizzo email -->
             <label for="email">Email:</label>
+            <br/>
             <input type="email" name="email" id="email">
 
             <br/>
@@ -41,6 +42,7 @@ and open the template in the editor.
             <input type="radio" id="femmina" name="sesso" value="Femmina"/>
 
             <br/>
+            <!-- Selezione multipla, cardinalità bassa -->
             <h3>Categorie:</h3>
             <label for="Arte">Arte</label>
             <input type="checkbox" name="cat" id="Arte" value="Arte" checked/>
@@ -67,8 +69,15 @@ and open the template in the editor.
             </select>
 
             <br/>
-            <!--<input type="button" name="submitt" value="OK"/>-->
-            <button>OK</button>
+            <!-- Inserimento del bottone OK 
+                <input type="button" name="submitt" value="OK"/>
+                        ..oppure..
+                <button>OK</button>
+            
+                type="submit" al click invia i dati inseriti nel form
+                alla pagina php specificata dall'attributo action
+            -->
+            <input type="submit" name="submit" value="OK"/>
             </fieldset>
 	</form>
     </body>
