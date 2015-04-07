@@ -14,60 +14,61 @@ and open the template in the editor.
         <form action="input-form.php" method="POST">
             <fieldset>
             <legend>Registrazione:</legend>
-                <!-- Input type='text' per inserire l'username -->
-		<label for="user">Username</label>
-                <br/>
-		<input type="text" name="user" id="user"/>
-		
-		<br/>
-		<!-- Input type='password' per l'inserimento della password -->
-		<label for="psw">Password:</label>
-		<input type="password" name="psw" id="psw"/>
-		
-		<br/>
-                <!-- Input type='email' per l'inserimento dell'indirizzo email -->
-		<label for="email">Email:</label>
-		<input type="email" name="email" id="email">
-		
-		<br/>
-		
-                <!-- Input type='radio' per la scelta singola 
-                     l'attributo checked spunta la voce che possiede l'attributo-->
-		<h3>Sesso:</h3>
-		<label for="maschio">Maschio</label>
-                <input type="radio" id="maschio" name="sesso" value="Maschio" checked/>
-		<label for="femmina">Femmina</label>
-		<input type="radio" id="femmina" name="sesso" value="Femmina"/>
+            <!-- Input type='text' per inserire l'username -->
+            <label for="user">Username</label>
+            <br/>
+            <input type="text" name="user" id="user"/>
 
-		<br/>
-		<h3>Categorie:</h3>
-		<label for="Arte">Arte</label>
-		<input type="checkbox" name="cat" id="Arte" value="Arte"/>
-		<label for="Sport">Sport</label>
-		<input type="checkbox" name="cat" id="Sport" value="Sport"/>
-		<label for="Musica">Musica</label>
-		<input type="checkbox" name="cat" id="Musica" value="Musica"/>
-		
-		<br/>
-		<label for="desc">Inserisci descrizione:</label>
-		<textarea name="desc" id="desc" value="Inserisci testo lungo" rows="2" cols="10"></textarea>
-		
-		<br/>
-                <!-- Selezione multipla -->
-		<label for="citta">Scegli la tua città:</label>
-		<br/>
-		<select name="citta" id="citta" size="3" multiple>
-			<option value="CA">Cagliari</option>
-			<option value="SS">Sassari</option>
-			<option value="NU">Nuoro</option>
-			<option value="OR">Oristano</option>
-			<option value="RO">Roma</option>
-			<option value="FI">Firenze</option>
-		</select>
-		
-		<br/>
-		<!--<input type="button" name="submitt" value="OK"/>-->
-		<button>OK</button>
+            <br/>
+            <!-- Input type='password' per l'inserimento della password -->
+            <label for="psw">Password:</label>
+            <br/>
+            <input type="password" name="psw" id="psw"/>
+
+            <br/>
+            <!-- Input type='email' per l'inserimento dell'indirizzo email -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <br/>
+
+            <!-- Input type='radio' per la scelta singola 
+                 l'attributo checked spunta la voce che possiede l'attributo-->
+            <h3>Sesso:</h3>
+            <label for="maschio">Maschio</label>
+            <input type="radio" id="maschio" name="sesso" value="Maschio" checked/>
+            <label for="femmina">Femmina</label>
+            <input type="radio" id="femmina" name="sesso" value="Femmina"/>
+
+            <br/>
+            <h3>Categorie:</h3>
+            <label for="Arte">Arte</label>
+            <input type="checkbox" name="cat" id="Arte" value="Arte" checked/>
+            <label for="Sport">Sport</label>
+            <input type="checkbox" name="cat" id="Sport" value="Sport"/>
+            <label for="Musica">Musica</label>
+            <input type="checkbox" name="cat" id="Musica" value="Musica"/>
+
+            <br/>
+            <label for="desc">Inserisci descrizione:</label>
+            <textarea name="desc" id="desc" value="Inserisci testo lungo" rows="2" cols="10"></textarea>
+
+            <br/>
+            <!-- Selezione multipla -->
+            <label for="citta">Scegli la tua città:</label>
+            <br/>
+            <select name="citta" id="citta" size="3" multiple>
+                    <option value="CA">Cagliari</option>
+                    <option value="SS">Sassari</option>
+                    <option value="NU">Nuoro</option>
+                    <option value="OR">Oristano</option>
+                    <option value="RO">Roma</option>
+                    <option value="FI">Firenze</option>
+            </select>
+
+            <br/>
+            <!--<input type="button" name="submitt" value="OK"/>-->
+            <button>OK</button>
             </fieldset>
 	</form>
     </body>
