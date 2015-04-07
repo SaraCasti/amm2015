@@ -8,29 +8,32 @@ and open the template in the editor.
     <head>
         <title>Esempio input form</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <h1>Input form:</h1>
         <form action="input-form.php" method="POST">
+            <fieldset>
+                <!-- Input type='text' per inserire l'username -->
 		<label for="user">Username</label>
 		<input type="text" name="user" id="user"/>
 		
 		<br/>
-		
+		<!-- Input type='password' per l'inserimento della password -->
 		<label for="psw">Password:</label>
 		<input type="password" name="psw" id="psw"/>
 		
 		<br/>
+                <!-- Input type='email' per l'inserimento dell'indirizzo email -->
 		<label for="email">Email:</label>
 		<input type="email" name="email" id="email">
 		
 		<br/>
 		
+                <!-- Input type='radio' per la scelta singola 
+                     l'attributo checked spunta la voce che possiede l'attributo-->
 		<h3>Sesso:</h3>
-		<br/>
 		<label for="maschio">Maschio</label>
-		<input type="radio" id="maschio" name="sesso" value="Maschio"/>
+                <input type="radio" id="maschio" name="sesso" value="Maschio" checked/>
 		<label for="femmina">Femmina</label>
 		<input type="radio" id="femmina" name="sesso" value="Femmina"/>
 
@@ -48,6 +51,7 @@ and open the template in the editor.
 		<textarea name="desc" id="desc" value="Inserisci testo lungo" rows="2" cols="10"></textarea>
 		
 		<br/>
+                <!-- Selezione multipla -->
 		<label for="citta">Scegli la tua città:</label>
 		<br/>
 		<select name="citta" id="citta" size="3" multiple>
@@ -62,7 +66,7 @@ and open the template in the editor.
 		<br/>
 		<!--<input type="button" name="submitt" value="OK"/>-->
 		<button>OK</button>
-	
+            </fieldset>
 	</form>
     </body>
 </html>
