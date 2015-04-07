@@ -33,7 +33,7 @@ and open the template in the editor.
                 {
                     ?>
                 <option value="<?php echo $i;?>">
-                    Valore <?php echo $i;?>
+                    Valore - <?= $i ?>
                 </option>
             <?php
                 }
