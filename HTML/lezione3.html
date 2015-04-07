@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Esempio input form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Input form:</h1>
+        <form action="input-form.php" method="POST">
+		<label for="user">Username</label>
+		<input type="text" name="user" id="user"/>
+		
+		<br/>
+		
+		<label for="psw">Password:</label>
+		<input type="password" name="psw" id="psw"/>
+		
+		<br/>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email">
+		
+		<br/>
+		
+		<h3>Sesso:</h3>
+		<br/>
+		<label for="maschio">Maschio</label>
+		<input type="radio" id="maschio" name="sesso" value="Maschio"/>
+		<label for="femmina">Femmina</label>
+		<input type="radio" id="femmina" name="sesso" value="Femmina"/>
+
+		<br/>
+		<h3>Categorie:</h3>
+		<label for="Arte">Arte</label>
+		<input type="checkbox" name="cat" id="Arte" value="Arte"/>
+		<label for="Sport">Sport</label>
+		<input type="checkbox" name="cat" id="Sport" value="Sport"/>
+		<label for="Musica">Musica</label>
+		<input type="checkbox" name="cat" id="Musica" value="Musica"/>
+		
+		<br/>
+		<label for="desc">Inserisci descrizione:</label>
+		<textarea name="desc" id="desc" value="Inserisci testo lungo" rows="2" cols="10"></textarea>
+		
+		<br/>
+		<label for="citta">Scegli la tua città:</label>
+		<br/>
+		<select name="citta" id="citta" size="3" multiple>
+			<option value="CA">Cagliari</option>
+			<option value="SS">Sassari</option>
+			<option value="NU">Nuoro</option>
+			<option value="OR">Oristano</option>
+			<option value="RO">Roma</option>
+			<option value="FI">Firenze</option>
+		</select>
+		
+		<br/>
+		<!--<input type="button" name="submitt" value="OK"/>-->
+		<button>OK</button>
+	
+	</form>
+    </body>
+</html>
