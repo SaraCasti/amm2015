@@ -15,7 +15,7 @@ and open the template in the editor.
             echo "Hello Php";
             echo "<h1>Titolo h1</h1>";
             
-            //Stampa
+            //Stampa valore di $cond
             $cond = 0;
             if($cond==0)
             {
