@@ -55,27 +55,11 @@ and open the template in the editor.
                     
                 <?php 
                 }
-                ?>        
+                ?> 
+                <br/>
                  
-                <!--
-                <label for="arte">Arte</label>
-                <input type="checkbox" name="cat" id="arte" value="0"/>
-                <br/>
-                
-                <label for="sport">Sport</label>
-                <input type="checkbox" name="cat" id="sport" value="1"/>
-                <br/>
-                
-                <label for="musica">Musica</label>
-                <input type="checkbox" name="cat" id="musica" value="2"/>
-                <br/>
-                
-                <label for="cinema">Cinema</label>
-                <input type="checkbox" name="cat" id="cinema" value="3"/>
-                <br/>
-                
-                -->
-                
+                    
+                <h3>Scegli anno nascita:</h3>
                 <select name="anno" id="anno">
                     <?php
                         for($i=1900; $i<2015; $i++)
