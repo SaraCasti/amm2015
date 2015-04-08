@@ -12,6 +12,7 @@ and open the template in the editor.
     <body>
         <form action="input-form.php" method="POST">
             <fieldset>
+                <legend>Registrazione:</legend>
                 <label for="usr">Username:</label>
                 <br/>
                 <input type="text" name="usr" id="usr"/>
@@ -94,10 +95,9 @@ and open the template in the editor.
             </select>
 
             <br/>
-                
-                
-                
-                
+            
+            <input type="submit" name="submit" value="OK"/>
+
             </fieldset>
         </form>
     </body>
