@@ -21,6 +21,10 @@ div.relative{
     position: relative;
 }
 
+/* Il primo div viene posizionato rispetto al div padre lasciando
+   uno spazio a destra e sinistra di 25px (margine) e il div avrà
+   altezza 100 px e si espanerà per tutta la larghezza
+*/
 div#div1{
     background-color: green;
     position: absolute;
@@ -29,7 +33,10 @@ div#div1{
     left: 25px;
 }
 
-
+/* Il secondo deve essere posizionato lasciando 105px in alto 
+   (100px per il div1 e 5 di margine) e con un margine laterale maggiore
+   rispetto al div1
+*/
 div#div2{
     background-color: darkcyan;
     position: absolute;
@@ -41,6 +48,8 @@ div#div2{
 }
 
 
+/* I div 3 e 4 devono avere stessa altezza e stesso margine rispettivamente 
+   sinistro e destro */
 div#div3{
     background-color: deeppink;
     position: absolute;
