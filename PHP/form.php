@@ -52,7 +52,6 @@ and open the template in the editor.
                 
                     <label for="<?=$value?>"><?=$value?></label>
                     <input type="checkbox" name="cat" id="<?=$value?>" value="<?=$value?>"/>
-                    <br/>
                     
                 <?php 
                 }
