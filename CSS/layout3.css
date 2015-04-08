@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8-apr-2015, 12.31.07
+    Author     : sary
+*/
+
+div#logo h1{
+    background: url("logo.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 100px;
+    padding-left: 100px;
+}
+
+/* posizionamento relativo del div genitore */
+div.relative{
+    position: relative;
+}
+
+div#div1{
+    background-color: green;
+    position: absolute;
+    height: 100px;
+    right: 25px;
+    left: 25px;
+}
+
+
+div#div2{
+    background-color: darkcyan;
+    position: absolute;
+    height: 100px;
+    right: 35px;
+    left: 35px;
+    top: 105px;
+    height: 250px;
+}
+
+
+div#div3{
+    background-color: pink;
+    position: absolute;
+    height: 100px;
+    top: 360px;
+    left: 35px;
+    right: 50%;
+}
+
+div#div4{
+    background-color: blue;
+    position: absolute;
+    height: 100px;
+    top: 360px;
+    left: 50%;
+    right: 35px;
+}
