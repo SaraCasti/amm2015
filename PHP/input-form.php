@@ -12,7 +12,7 @@ and open the template in the editor.
     <body>
         <?php
         // put your code here
-            if(empty($_POST['usr']) || empty($_POST['psw']) || $_POST['email'])
+            if(empty($_POST['usr']) || empty($_POST['psw']) || empty($_POST['email']))
             {
                 echo "Username, password e/o email mancante <br/>";
             }
