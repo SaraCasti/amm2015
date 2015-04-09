@@ -34,11 +34,11 @@ and open the template in the editor.
                 <h3>Sesso:</h3>
                 
                 <label for="femmina">F</label>
-                <input type="radio" name="sesso" id="femmina" value="0" checked/>
+                <input type="radio" name="sesso" id="femmina" value="F" checked/>
                 <br/>
                 
                 <label for="maschio">M</label>
-                <input type="radio" name="sesso" id="maschio" value="1"/>
+                <input type="radio" name="sesso" id="maschio" value="M"/>
                 <br/>
                 
                 <h3>Scegli categorie:</h3>
