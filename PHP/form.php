@@ -34,11 +34,11 @@ and open the template in the editor.
                 <h3>Sesso:</h3>
                 
                 <label for="femmina">F</label>
-                <input type="radio" name="sesso" id="femmina" value="0" checked/>
+                <input type="radio" name="sesso" id="femmina" value="F" checked/>
                 <br/>
                 
                 <label for="maschio">M</label>
-                <input type="radio" name="sesso" id="maschio" value="1"/>
+                <input type="radio" name="sesso" id="maschio" value="M"/>
                 <br/>
                 
                 <h3>Scegli categorie:</h3>
@@ -52,7 +52,7 @@ and open the template in the editor.
                 ?>
                 
                     <label for="<?=$value?>"><?=$value?></label>
-                    <input type="checkbox" name="cat" id="<?=$value?>" value="<?=$value?>"/>
+                    <input type="checkbox" name="cat[]" id="<?=$value?>" value="<?=$value?>"/>
                     
                 <?php 
                 }
@@ -63,7 +63,7 @@ and open the template in the editor.
                 <h3>Scegli anno nascita:</h3>
                 <select name="anno" id="anno">
                     <?php
-                        for($i=1900; $i<2015; $i++)
+                        for($i=1910; $i<2015; $i++)
                         {
                             
                     ?>
@@ -85,7 +85,7 @@ and open the template in the editor.
             <!-- Selezione multipla -->
             <label for="citta">Scegli le tue città preferite:</label>
             <br/>
-            <select name="citta" id="citta" size="3" multiple>
+            <select name="citta" id="citta[]" size="3" multiple>
                     <option value="CA">Cagliari</option>
                     <option value="SS">Sassari</option>
                     <option value="NU">Nuoro</option>
@@ -94,9 +94,9 @@ and open the template in the editor.
                     <option value="FI">Firenze</option>
             </select>
 
-            <br/>
+            <br/><br/>
             
-            <input type="submit" name="submit" value="OK"/>
+            <input type="submit" name="submit" value="Invia"/>
 
             </fieldset>
         </form>
